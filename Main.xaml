@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="632,2218" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,6 +25,15 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -52,13 +61,122 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="642,2153" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: iCampus - Integrated Tertiary Management System | Telligent (GH) Systems" sap:VirtualizedContainerService.HintSize="580,2042" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="967829a3-aca2-4294-a833-588811d8a820" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1825" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT txtuser'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="967829a3-aca2-4294-a833-588811d8a820" Text="01212816d" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://icampus.atu.edu.gh/Default" CvElementArea="619, 324, 208, 25" CvType="InputBox" DesignTimeRectangle="621, 370, 206, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT txtuser'" FullSelectorArgument="&lt;webctrl id='txtuser' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtuser' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="217d54e8-d8cd-4315-9d42-3ba4a8a38cc6" InformativeScreenshot="2cc4130b53f990b7a85da8ec9943e4ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='iCampus - Integrated Tertiary Management System | Telligent (GH) Systems' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Authenticate'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="967829a3-aca2-4294-a833-588811d8a820" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://icampus.atu.edu.gh/Default" CvElementArea="686, 357, 82, 21" CvTextArea="692, 361, 69, 12" CvTextArgument="Authenticate" CvType="Button" DesignTimeRectangle="687, 358, 81, 19" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Authenticate'" FullSelectorArgument="&lt;webctrl id='btnAuth' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnAuth' tag='INPUT' type='submit' class='' aaname='Authenticate' check:text='Authenticate' /&gt;" Guid="e865ad69-3a64-481b-ba01-456b043e22d9" InformativeScreenshot="93b394b81c8076ab1665346444a09251.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='iCampus - Integrated Tertiary Management System | Telligent (GH) Systems' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Windows Security" sap:VirtualizedContainerService.HintSize="484,629" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="0f02ce52-3fe9-4f41-8ed0-e6ac0357ff48" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,338" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="pass">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:String">1883</Literal>
+                        </Variable.Default>
+                      </Variable>
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="1883" Version="V3" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="412, 157, 456, 439" FilePath="C:\Windows\System32\credentialuibroker.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ9SURBVFhH7ZfbU1tVFMYzffDF6av/gDP+Fb5jbbWWcmmh15RWqTN0KgUBgZJA7gGaBqiU0BAuIRACxWq1WF9rIfWhT/pU3/AFyO3k5Aqfa52TyymelItOfNA9880+7L3Z32+tvc7JOZr/27/eLHZHp67PjHKqz2jTkfVbpCMak8W289urdbz89XfSq39Un7U7VHuGIPN3JAizdUD8eTWIv6PVtRdYC/6CtReyVun6OY2x1NbnAN4lva2hdIixeALpVBKpZOIQkv8vqaLda9lDTGXyAO+RjhKAVeTBcuovAJlsVppYWXmGpz+93JdWfnyGbCYtKRgMqiof+fvXJyTxtSpANgfAG1d1LaC624+annnU6udwxuDDWZMP9TYv6vtncN4xhQvOSWntH+vrSCXiBaNSOhDAZfMytNaH0NqW0DCwiKuOAK45F/DpyDwaR+dw3eXD5+5ZBYCgGj1rXwD8x7YCoMn5HZqGv8WNe49w8z7JtYxm90Pc8iyhZXoRrd4A2ub8BYA0AfDGyaQo9wm5V4rNK3qHpWtVAEGUJ3jTtvEn6HD/gA7P9+icfowvyPyG24/GcS+ujLmhdY2jYcJVBBDjqtGz8gBsfuqerTRAVBALAHrvU9yeeYKGIR9OmsfwgXEIH1rv4kS/Ax/dGcRJZz9OjdgUALkMUOTS7cf9riywef1Mz/4Amh98gxOGUVT0DeOY2YnjNjIfuIOP7w7gk2G7tNnp+xYFQEw1elYegM0bHzeVBogpACr0I3LUFjIvRE3mI3ZUfm3F6TEzqh8YiwBUA0l6GCXoKPKGu8XmbwaIFwGOmXIp56gdZD5EKaeoK0ctqHKZUOM24IyntwCQoiNQi551AAB5gjc9bqeoBxUp56gp5dXjJtRO9OHspB51lNICQFw40GN8TwBloVWOWlFFKa+hlNd6yHxKR+d5G+d9XUUAOgK16FmHAlAWWnU+5ZO9qJvuwTlvNy7MdeKSv/01gFTuDlAz3K09AZSFJqV8Si9HPduFi/Nf4dJCO7SLrQWABNUAF6DaA4jHRJqLRqMIh8OIhEN7AygLrW5aR1Fzyjtx0d+By4E2XFlqRcPyrQJA8g23YTJB+xJgJBJGKBRCOLRVAkDxJFQW2rlZTjlFTSnXBr4k8xZcXW7GtUc3FQBR1ejzGYhTkXLkm5ub2NraVAeIi/KLwuTUorTxfjThCchHQAZq0bPigoBYNELGWzIASRUgEpMzwL/tvOlBFI8VM8A914MgxBClcT53jnpjY0NSSYBQNAH+ScZ2CumkACANZGksFUeGhO0kje2Qtkm0jueRwk5GLjI2ls1FCJSRGJlHKfIwnT2ff16cjZIAPFEuvQbA7+jdOkOCBw+jXqMVRosdFvsgTNZBGEw26FXWKdXc0j5E5vJbMTX+QOB3dB5gqnKIveTvAmpHchdMc7RMYi/5y+g/3jSaPwH2G61IeD/6MgAAAABJRU5ErkJggg==" InformativeScreenshot="0233f57c3651686f25ff678780a7e8d1.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;" Title="Windows Security" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: iCampus: Portal Login" sap:VirtualizedContainerService.HintSize="484,588" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="58e15b4b-2f8a-48b2-a89a-6af93bb2e0dc" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,331" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT mainContent_Login…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" IsPassword="True" ScopeIdentifier="58e15b4b-2f8a-48b2-a89a-6af93bb2e0dc" Text="0240193739" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://icampus.atu.edu.gh/iUserLog/iUserLogin" CvElementArea="679, 328, 200, 27" CvType="InputBox" DesignTimeRectangle="681, 373, 198, 27" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT mainContent_Login…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='mainContent_LoginCtr_Password' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='mainContent_LoginCtr_Password' type='password' tag='INPUT' class='' aaname='Password:' /&gt;" Guid="ed7d4a2f-ce97-478f-bf39-32030729bf12" InformativeScreenshot="6033583568be688344d3adc3b6f1e7cb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='iCampus: Portal Login' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1296, 768" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="2f99eab2d7f718d79e9bdf6d076fa6e0.jpg" Selector="&lt;html app='chrome.exe' title='iCampus: Portal Login' /&gt;" Title="iCampus: Portal Login" Url="https://icampus.atu.edu.gh/iUserLog/iUserLogin" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1296, 768" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="871d2da89cad125a3759b7f4ae901af0.jpg" Selector="&lt;html app='chrome.exe' title='iCampus - Integrated Tertiary Management System | Telligent (GH) Systems' /&gt;" Title="iCampus - Integrated Tertiary Management System | Telligent (GH) Systems" Url="https://icampus.atu.edu.gh/Default" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
